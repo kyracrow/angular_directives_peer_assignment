@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+}
+
+
+.one{
+    text-align: center;
+}
+
+ol {
+    margin-left: 400px;
+    width: 200px;
+}
+
+.allcats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.two{
+
+}
+
+.odd{
+    color: orange;
+}
+
+.even{
+    color: blue;
+}
+

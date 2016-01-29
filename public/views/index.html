@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Directive Peer</title>
+    <script src="../vendors/angular.min.js"></script>
+    <script src="../scripts/scripts.js"></script>
+    <link href="../styles/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body ng-controller="MainController">
+    <h1>Welcome to the Kitty Castle</h1>
+    <div class="one">
+        <h2>ngClassEven</h2>
+            <ol>
+                <li ng-repeat="name in names">
+                    <span ng-class-odd="'odd'" ng-class-even="'even'">
+                        {{name}}
+                    </span>
+                </li>
+            </ol>
+    </div>
+
+    <div class="allcats">
+        <div class="two">
+            <h2>ngMouseOver</h2>
+            <div ng-mouseover="count = count + 1" ng-init="count=0">
+                <img src="../vendors/cute-little-cat.jpg" style="width:350px;height:auto;">
+            </div>
+            Pet the Kitty: {{count}}
+        </div>
+
+        <div class="three">
+            <h2>ngDblclick</h2>
+            <div ng-dblclick="poke = poke + 1" ng-init="poke=0">
+                <img src="../vendors/Angry_Cat_BDAY.jpg" style="width:350px;height:auto;">
+            </div>
+            Poke the Kitty: {{poke}}
+        </div>
+    </div>
+</body>
+</html>
